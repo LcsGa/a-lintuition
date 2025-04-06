@@ -1,0 +1,112 @@
+@layer reset, theme, base, feature, app;
+
+@import './styles/theme.css' layer(theme);
+
+@import 'https://unpkg.com/open-props' layer(base);
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Quicksand:wght@300..700&display=swap')
+layer(base);
+
+@import './styles/header.css' layer(feature);
+@import './styles/landing.css' layer(feature);
+
+@layer reset {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-wrap: pretty;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  q {
+    quotes: none;
+  }
+}
+
+@property --heading-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+
+@property --text-color {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #000;
+}
+
+@layer base {
+  :root {
+    --heading-color: var(--md-sys-color-primary);
+    --heading-font-family: 'El Messiri', sans-serif;
+    --heading-1-font-size: var(--font-size-5);
+
+    --text-color: var(--md-sys-color-on-surface);
+    --text-font-family: 'Quicksand', sans-serif;
+    --text-font-size: var(--font-size-1);
+
+    scroll-snap-type: block mandatory;
+    scroll-behavior: smooth;
+
+    timeline-scope: --landing;
+  }
+
+  body {
+    min-block-size: 100dvh;
+    background-color: var(--md-sys-color-surface);
+  }
+
+  h1 {
+    font-size: var(--heading-1-font-size);
+  }
+
+  :is(h1, h2, h3, h4, h5, h6, q) {
+    font-family: var(--heading-font-family);
+    font-weight: var(--font-weight-7);
+    color: var(--heading-color);
+
+    :not(&) {
+      font-family: var(--text-font-family);
+      color: var(--text-color);
+      font-size: var(--text-font-size);
+    }
+  }
+}
+
+@layer app {
+  header {
+    position: fixed;
+    inset-inline: 0;
+    z-index: var(--layer-important);
+    animation: header forwards;
+    animation-timeline: --landing;
+    animation-range: exit;
+  }
+
+  @keyframes header {
+    from {
+      --heading-color: var(--md-sys-color-inverse-primary);
+      --text-color: var(--md-sys-color-inverse-on-surface);
+    }
+    to {
+      --haeding-color: var(--md-sys-color-on-primary);
+      --text-color: var(--md-sys-color-on-surface);
+    }
+  }
+
+  body > section,
+  main {
+    scroll-snap-align: start;
+  }
+
+  main section {
+    min-block-size: 100dvh;
+  }
+}
