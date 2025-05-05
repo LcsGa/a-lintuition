@@ -3,11 +3,8 @@
 @import './styles/theme.css' layer(theme);
 
 @import 'https://unpkg.com/open-props' layer(base);
-@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Quicksand:wght@300..700&display=swap')
-layer(base);
 
 @import './styles/header.css' layer(feature);
-@import './styles/landing.css' layer(feature);
 
 @layer reset {
   * {
@@ -30,52 +27,26 @@ layer(base);
   }
 }
 
-@property --heading-color {
-  syntax: '<color>';
-  inherits: true;
-  initial-value: #000;
-}
-
-@property --text-color {
-  syntax: '<color>';
-  inherits: true;
-  initial-value: #000;
-}
-
 @layer base {
-  :root {
-    --heading-color: var(--md-sys-color-primary);
-    --heading-font-family: 'El Messiri', sans-serif;
-    --heading-1-font-size: var(--font-size-5);
-
-    --text-color: var(--md-sys-color-on-surface);
-    --text-font-family: 'Quicksand', sans-serif;
-    --text-font-size: var(--font-size-1);
-
-    scroll-snap-type: block mandatory;
-    scroll-behavior: smooth;
-
-    timeline-scope: --landing;
-  }
-
   body {
     min-block-size: 100dvh;
-    background-color: var(--md-sys-color-surface);
+    background-color: var(--color-surface);
+    color: var(--color-text);
   }
 
   h1 {
-    font-size: var(--heading-1-font-size);
+    font-size: var(--font-size-8);
   }
 
   :is(h1, h2, h3, h4, h5, h6, q) {
-    font-family: var(--heading-font-family);
+    font-family: var(--font-heading);
     font-weight: var(--font-weight-7);
-    color: var(--heading-color);
+    color: var(--color-heading);
 
     :not(&) {
       font-family: var(--text-font-family);
-      color: var(--text-color);
       font-size: var(--text-font-size);
+      color: var(--color-text);
     }
   }
 }
@@ -84,29 +55,30 @@ layer(base);
   header {
     position: fixed;
     inset-inline: 0;
-    z-index: var(--layer-important);
-    animation: header forwards;
-    animation-timeline: --landing;
-    animation-range: exit;
   }
 
-  @keyframes header {
-    from {
-      --heading-color: var(--md-sys-color-inverse-primary);
-      --text-color: var(--md-sys-color-inverse-on-surface);
+  #landing {
+    --section-block-size: 100dvh;
+    --section-block-start-gutter: calc(var(--size-10) + var(--size-4));
+    --section-gutter: var(--size-3);
+    block-size: var(--section-block-size);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: var(--section-block-start-gutter) var(--section-gutter) var(--section-gutter);
+
+    div {
+      inline-size: calc(var(--section-block-size) - var(--section-block-start-gutter) - var(--section-gutter));
+
+      img {
+        max-inline-size: 100%;
+        max-block-size: 100%;
+      }
     }
-    to {
-      --haeding-color: var(--md-sys-color-on-primary);
-      --text-color: var(--md-sys-color-on-surface);
+
+    q {
+      color: var(--color-graphics);
+      font-size: clamp(var(--font-size-8), 8vw, calc(2 * var(--font-size-8)));
     }
-  }
-
-  body > section,
-  main {
-    scroll-snap-align: start;
-  }
-
-  main section {
-    min-block-size: 100dvh;
   }
 }

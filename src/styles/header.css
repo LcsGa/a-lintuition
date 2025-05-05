@@ -3,6 +3,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: var(--size-7) var(--size-9);
+  /* background-color: var(--color-surface-variant); */
+
+  h1 {
+    text-box: trim-both cap alphabetic;
+  }
 
   ul {
     display: flex;
