@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A l'intuition</title>
     <link rel="stylesheet" href="./src/index.css" />
+    <script type="module" src="./src/components"></script>
   </head>
 
   <body>
     <header>
       <a href="#landing">
-        <h1>A l'intuition</h1>
+        <h1>À l'intuition</h1>
       </a>
 
       <nav>
         <ul>
           <li>
-            <a href="#services">Prestations</a>
+            <a href="#massages">Massages</a>
           </li>
 
           <li>
@@ -27,22 +28,180 @@
           <li>
             <a href="#faq">Questions fréquentes</a>
           </li>
+
+          <li>
+            <a href="#opinions">Témoignages</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section id="landing">
-      <div>
-        <img src="src/assets/images/a_lintuition_original.png" alt="Logo A l'intuition" />
-      </div>
-
-      <q>Prendre soin de soi ne doit pas être un luxe mais une priorité</q>
-    </section>
-
     <main>
-      <section id="services">
-        <h2>Prestations</h2>
+      <section id="landing">
+        <div>
+          <img src="src/assets/images/a_lintuition_original.png" alt="Logo A l'intuition" />
+        </div>
+
+        <q>Prendre soin de soi, un pas vers l'équilibre intérieur</q>
+
+        <a class="btn" href="#massages">Découvrir les massages</a>
+      </section>
+
+      <section id="massages">
+        <h2>Mes prestations</h2>
+
+        <p class="intro">
+          Je vous suggère de choisir un temps de soin et chaque massage guidé par mon intuition sera personnalisé au
+          mieux selon vos attentes et besoins.
+        </p>
+
+        <div id="service-cards">
+          <app-service-card>
+            <h3 slot="heading">Massage sur mesure 30 min</h3>
+
+            <p slot="description">Couvrant une à deux zones du corps</p>
+
+            <span slot="price">35</span>
+          </app-service-card>
+
+          <app-service-card price="70">
+            <h3 slot="heading">Massage sur mesure 1 heure</h3>
+
+            <p slot="description">Un soin complet pour une détente profonde</p>
+
+            <span slot="price">70</span>
+          </app-service-card>
+
+          <app-service-card>
+            <h3 slot="heading">Massage Prénatal 1 heure</h3>
+
+            <p slot="description">
+              Apporte douceur et détente, à partir du deuxième trimestre de grossesse.
+
+              <br />
+
+              Un moment de pause pour vous et de connexion avec votre bébé.
+            </p>
+
+            <span slot="price">70</span>
+          </app-service-card>
+
+          <app-service-card heading="Massage sur mesure 1h30" price="110">
+            <h3 slot="heading">Massage sur mesure 1h30</h3>
+
+            <p slot="description">L'expérience ultime pour un relâchement total</p>
+
+            <span slot="price">110</span>
+          </app-service-card>
+        </div>
+
+        <article id="special-offer" class="card">
+          <h3>Offre spéciale</h3>
+
+          <p>
+            Pour vous encourager à prendre soin de vous fréquemment et afin que vous preniez conscience de l'efficacité
+            des massages lorsqu'ils sont prodigués régulièrement, les
+            <strong>5 massages d'une heure</strong> sont proposés au tarif de <strong>325 €</strong>.
+          </p>
+        </article>
+
+        <article>
+          <p>Chaque massage sera effectué avec une huile chauffée.</p>
+
+          <p>
+            J'accorde une grande importance à échanger avec vous avant le massage afin de cibler au mieux vos attentes
+            et les respecter, mais aussi de vous rassurer si vous avez des questions et d'établir un lien de confiance.
+          </p>
+
+          <p>
+            Je mets un point d'honneur à vous recevoir sans aucun jugement et en toute bienveillance afin d'effectuer
+            mon massage de manière juste pour vous et votre corps, sans le brusquer et dans l'écoute.
+          </p>
+
+          <p>
+            Je vous propose un massage où mon toucher sera à la fois ferme, c'est-à-dire rassurant, délicat,
+            c'est-à-dire progressif et à l'écoute des réactions du corps mais aussi avec une grande précision, ce qui
+            permettra un relâchement musculaire efficace. Ma pression est très variable et sera surtout adaptée à la
+            sensibilité de chacun.
+          </p>
+        </article>
+
+        <a class="btn" href="https://alintuition.simplybook.it/v2/">Prendre Rendez-vous</a>
+      </section>
+
+      <section id="about" class="no-layout">
+        <img src="https://cdn.pixabay.com/photo/2025/05/04/17/47/dog-9578735_1280.jpg" />
+
+        <h2>Mon approche intuitive</h2>
+
+        <p>
+          Tout a commencé lors de ma formation aux massages, par un certificat de qualification professionnelle effectué
+          sur deux ans, où j'ai eu la chance d'être formée par différents professionnels tous passionnés et imprégnés de
+          différentes techniques de massages du monde qu'ils m'ont transmis.
+        </p>
+
+        <p>
+          Dès lors, certains m'ont directement fait part du fait que j'avais cette intuition, ce ressenti, à travers les
+          massages que je prodiguais à l'école, dès le début. Bien sûr, ce ressenti s'est affiné au fil de mes années
+          d'expérience au sein des divers Spa hôteliers dans lesquels j'ai débuté en tant que Spa praticienne. Ma
+          technicité et ma précision se sont aussi développées tout au long de mon parcours.
+        </p>
+
+        <p>
+          Les nombreux retours des personnes massées me confirmaient la justesse de mes intuitions, tant au niveau du
+          toucher que de l'efficacité de mes massages. J'ai eu la chance d'évoluer dans un Spa en tant que formatrice,
+          ce qui m'a permis de prendre conscience de mon plaisir à transmettre.
+        </p>
+
+        <p>
+          Il me manquait cependant encore quelque chose. Je ressentais au fond de moi que pour prendre soin des autres
+          de la manière la plus juste possible, il fallait que je travaille sur moi. C'est alors que je me suis lancée à
+          travers un cheminement personnel et d'éveil. Des guides m'ont accompagnée tout au long de cette redécouverte
+          de moi-même, et ces prises de conscience m'ont amenée là où j'en suis actuellement.
+        </p>
+
+        <p>
+          J'ai pu prendre conscience de l'importance d'avoir fait ce travail sur moi pour donner, être dans la justesse
+          de mon touché, sans jugements et dans la bienveillance totale. C'est selon moi un travail d'une vie et je
+          continue perpétuellement à m'enrichir et à apprendre.
+        </p>
+
+        <p>
+          Je suis avant tout passionnée par la transmission, à travers les massages que je prodigue, l’accompagnement
+          des autres et la réalisation personnelle.
+        </p>
+
+        <p>Je me laisse guider par mes mains à travers mon ressenti et mon intuition et laisse l'alchimie s'opérer.</p>
+
+        <p>
+          La confiance qui m'a été accordé par les personnes revenant régulièrement pour mes massages m'ont donné
+          l'envie de me lancer et d'exercer au sein de cabinets.
+        </p>
+
+        <p>
+          Mon besoin fondamental en tant que massothérapeute est de me ressourcer dans la nature, avec le contact de
+          l'eau sur ma peau ou du sol par la marche en montagne ou en forêt. Cette région fabuleuse me le permet
+          quotidiennement et je suis donc très heureuse d'y être installée.
+        </p>
+      </section>
+
+      <section id="faq">
+        <h2>Questions fréquentes</h2>
+      </section>
+
+      <section id="opinions">
+        <h2>Ce que mes clients disent</h2>
+      </section>
+
+      <section id="contact">
+        <h2>Me rencontrer</h2>
       </section>
     </main>
+
+    <footer></footer>
   </body>
 </html>

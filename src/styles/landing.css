@@ -1,0 +1,38 @@
+#landing {
+  block-size: var(--section-block-size);
+  display: grid;
+  grid-template-rows: 1fr repeat(2, auto);
+  justify-items: center;
+  align-content: space-between;
+  align-items: center;
+  gap: var(--size-6);
+
+  h1 {
+    font-size: calc(1.5 * var(--size-8));
+  }
+
+  div {
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+
+    img {
+      position: absolute;
+      inset-block-start: 50%;
+      inset-inline-start: 50%;
+      translate: -50% -50%;
+      max-block-size: 100%;
+      max-inline-size: 100%;
+    }
+  }
+
+  q {
+    text-align: center;
+    font-family: var(--font-title);
+    font-size: var(--font-size-fluid-2);
+    font-style: italic;
+    font-weight: 200;
+    quotes: none;
+    color: var(--color-primary);
+  }
+}

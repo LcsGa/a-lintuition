@@ -2,11 +2,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-7) var(--size-9);
-  /* background-color: var(--color-surface-variant); */
+  color: var(--color-primary);
+  padding: var(--size-3) var(--size-5);
+  background-color: var(--color-surface);
 
   h1 {
-    text-box: trim-both cap alphabetic;
+    text-wrap: nowrap;
   }
 
   ul {

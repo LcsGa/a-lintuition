@@ -1,0 +1,41 @@
+#massages {
+  #service-cards {
+    justify-self: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--size-14), 1fr));
+    gap: var(--size-6);
+    margin-inline: var(--size-8);
+
+    app-service-card {
+      grid-template-rows: subgrid;
+      grid-row: span 3;
+    }
+  }
+
+  article#special-offer {
+    justify-items: center;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-3);
+    background-color: var(--color-surface-variant);
+    padding: var(--size-6);
+    margin-inline: var(--size-8);
+
+    h3 {
+      color: var(--color-primary);
+      margin-bottom: var(--size-3);
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+
+  article:not(#special-offer) {
+    display: grid;
+    gap: var(--size-6);
+  }
+
+  a {
+    align-self: center;
+  }
+}

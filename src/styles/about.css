@@ -1,0 +1,23 @@
+#about {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: start;
+  justify-content: center;
+  gap: var(--size-4) var(--size-8);
+
+  img {
+    grid-row: span 9;
+    inline-size: var(--size-14);
+    border-radius: var(--radius-4);
+  }
+
+  h2 {
+    margin-block-end: var(--size-3);
+  }
+
+  h2,
+  p {
+    grid-column: 2;
+    text-align: start;
+  }
+}

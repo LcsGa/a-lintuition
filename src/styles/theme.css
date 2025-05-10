@@ -1,14 +1,25 @@
 :root {
-  --color-surface: hsl(5, 35%, 80%);
+  --color-surface: hsl(23, 100%, 96%);
   --color-surface-variant: hsl(22, 34%, 73%);
-  --color-heading: hsl(0, 100%, 28%);
+  --color-primary: hsl(0, 100%, 28%);
   --color-text: hsl(0, 5%, 8%);
   --color-graphics: hsl(0, 40%, 34%);
 
-  --font-heading: 'Savoye Let', cursive;
+  --font-display: 'Savoye Let';
+  --font-body: 'Inter', sans-serif;
 }
 
 @font-face {
   font-family: 'Savoye Let';
   src: url('assets/fonts/savoyeletplain.ttf');
+}
+
+@font-face {
+  font-family: 'Sulat Rizal';
+  src: url('assets/fonts/SulatRizal.ttf');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fonts/Inter-VariableFont_opsz,wght.ttf');
 }
