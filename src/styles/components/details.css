@@ -1,0 +1,35 @@
+details {
+  --_padding: var(--size-5);
+
+  position: relative;
+  max-inline-size: calc(2 * var(--size-14));
+  inline-size: 100%;
+  padding: var(--_padding);
+  border-radius: var(--radius-3);
+  background-color: var(--color-surface);
+  cursor: pointer;
+
+  summary {
+    font-weight: var(--font-weight-7);
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  > :nth-child(2) {
+    margin-block-start: var(--size-3);
+  }
+
+  > :nth-child(n + 3) {
+    margin-block-start: var(--size-2);
+  }
+
+  ul {
+    list-style: inside;
+    margin-inline-start: var(--size-1);
+  }
+}

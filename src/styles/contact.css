@@ -32,7 +32,7 @@
       align-content: start;
       padding: var(--size-5);
       border-radius: var(--radius-3);
-      background-color: color-mix(in oklch, var(--color-graphics), white 20%);
+      background-color: color-mix(in oklch, var(--color-graphics), white 15%);
 
       iframe {
         max-inline-size: var(--size-15);

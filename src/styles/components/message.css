@@ -1,0 +1,28 @@
+.message {
+  --_border-color: var(--message-border-color, var(--color-text));
+  --_bg-color: var(--message-bg-color, var(--color-surface));
+  --_text-color: var(--message-text-color);
+
+  background-color: var(--_bg-color);
+  border-inline-start: var(--size-1) solid var(--_border-color);
+  border-radius: 0 var(--radius-3) var(--radius-3) 0;
+  padding: var(--size-5);
+  max-inline-size: calc(2 * var(--size-14));
+  inline-size: 100%;
+  color: var(--_text-color);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-block-end: var(--size-3);
+  }
+
+  &.message-danger {
+    --_border-color: var(--color-primary);
+    --_bg-color: color-mix(in oklab, red, white 90%);
+    --_text-color: var(--color-primary);
+  }
+}

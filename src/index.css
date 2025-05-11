@@ -3,11 +3,14 @@
 @import 'https://unpkg.com/open-props' layer(base);
 
 @import './styles/components/button.css' layer(component);
+@import './styles/components/details.css' layer(component);
+@import './styles/components/message.css' layer(component);
 
 @import './styles/header.css' layer(feature);
 @import './styles/landing.css' layer(feature);
 @import './styles/massages.css' layer(feature);
 @import './styles/about.css' layer(feature);
+@import './styles/faq.css' layer(feature);
 @import './styles/contact.css' layer(feature);
 
 @layer reset {
@@ -91,7 +94,7 @@
     }
 
     > p,
-    article:not(.card, .group) p {
+    article:not(.card, .group, .message) p {
       max-inline-size: calc(1.2 * var(--size-content-3));
       text-align: center;
     }
