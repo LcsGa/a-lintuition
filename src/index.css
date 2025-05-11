@@ -67,12 +67,6 @@
   }
 }
 
-header,
-main,
-footer {
-  margin-inline: var(--size-);
-}
-
 header {
   position: fixed;
   inset-inline: 0;
