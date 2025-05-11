@@ -1,9 +1,23 @@
 #about {
   display: grid;
-  grid-template-columns: repeat(2, auto);
   justify-content: center;
-  justify-items: start;
   gap: var(--size-4) var(--size-8);
+
+  @media screen and (width >= 850px) {
+    grid-template-columns: repeat(2, auto);
+    justify-items: start;
+
+    h2,
+    p {
+      text-align: start;
+    }
+  }
+
+  @media screen and (width < 850px) {
+    h2 {
+      margin-block-start: var(--size-4);
+    }
+  }
 
   img {
     grid-row: span 2;
@@ -18,10 +32,5 @@
   article {
     display: grid;
     gap: inherit;
-  }
-
-  h2,
-  p {
-    text-align: start;
   }
 }

@@ -4,11 +4,17 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(var(--size-14), 1fr));
     gap: var(--size-6);
-    margin-inline: var(--size-8);
 
     app-service-card {
       grid-template-rows: subgrid;
       grid-row: span 3;
+    }
+  }
+
+  @media screen and (width >= 850px) {
+    #service-cards,
+    article#special-offer {
+      margin-inline: var(--size-8);
     }
   }
 
@@ -18,7 +24,6 @@
     border-radius: var(--radius-3);
     background-color: var(--color-surface-variant);
     padding: var(--size-6);
-    margin-inline: var(--size-8);
 
     h3 {
       color: var(--color-primary);
@@ -27,6 +32,7 @@
 
     p {
       text-align: center;
+      text-wrap: balance;
     }
   }
 
