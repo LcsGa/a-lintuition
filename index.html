@@ -5,8 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A l'intuition</title>
-    <link rel="stylesheet" href="./src/index.css" />
     <script type="module" src="./src/pattern"></script>
+    <script type="module" src="./src/components"></script>
+    <style>
+      @layer reset, theme, base, component, feature;
+    </style>
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
 
   <body>
@@ -133,7 +137,7 @@
         <a class="btn" href="https://alintuition.simplybook.it/v2/">Prendre Rendez-vous</a>
       </section>
 
-      <section id="about" class="no-layout">
+      <section id="about">
         <img src="https://cdn.pixabay.com/photo/2025/05/04/17/47/dog-9578735_1280.jpg" />
 
         <h2>Mon approche intuitive</h2>
@@ -203,6 +207,85 @@
 
       <section id="contact">
         <h2>Me rencontrer</h2>
+
+        <p class="intro">Je vous accueille uniquement sur rendez-vous dans l'un des cabinets ci-dessous.</p>
+
+        <article class="group">
+          <figure>
+            <figcaption>
+              <h3>Espace Ordokia</h3>
+
+              <ui-data-list>
+                <ui-data-list-item heading="Adresse">
+                  <span class="text-nowrap">11B Espace Ordokia,</span>
+                  <span class="text-nowrap">Rue Principale,</span>
+                  <span class="text-nowrap">64250 Itxassou</span>
+                </ui-data-list-item>
+
+                <ui-data-list-item heading="Horraires">
+                  <span class="text-nowrap">Lun :</span>
+                  <span class="text-nowrap">13h30 - 20h30</span>
+                </ui-data-list-item>
+
+                <ui-data-list-item heading="Téléphone">
+                  <a href="tel:+33663257336" class="text-nowrap">06 63 25 73 36</a>
+                </ui-data-list-item>
+
+                <ui-data-list-item heading="Email">
+                  <a href="mailto:alintuition3@gmail.com" class="text-nowrap">alintuition3@gmail.com</a>
+                </ui-data-list-item>
+              </ui-data-list>
+            </figcaption>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2901.9429383149204!2d-1.4043092!3d43.3363831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480153d1976650cd%3A0x695b68aead67512d!2sClara%20ANDRE%20Ost%C3%A9opathe%20D.O!5e0!3m2!1sen!2sfr!4v1746961701409!5m2!1sen!2sfr"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
+            <small>Cabinet situé derrière la pharmacie Gereziak</small>
+          </figure>
+
+          <figure>
+            <figcaption>
+              <h3>Centre Viniyoga</h3>
+
+              <ui-data-list>
+                <ui-data-list-item heading="Adresse">
+                  <span class="text-nowrap">104 Rue de Lamouly,</span>
+                  <span class="text-nowrap">64600 Anglet</span>
+                </ui-data-list-item>
+
+                <ui-data-list-item heading="Horraires">
+                  <span class="text-nowrap">Mar, Mer :</span>
+                  <span class="text-nowrap">13h30 - 20h30</span>
+                </ui-data-list-item>
+
+                <ui-data-list-item heading="Téléphone">
+                  <a href="tel:+33663257336" class="text-nowrap">06 63 25 73 36</a>
+                </ui-data-list-item>
+
+                <ui-data-list-item heading="Email">
+                  <a href="mailto:alintuition3@gmail.com" class="text-nowrap">alintuition3@gmail.com</a>
+                </ui-data-list-item>
+              </ui-data-list>
+            </figcaption>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.3848758603876!2d-1.4982446!3d43.494305999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd514041c73c4c1f%3A0x2a3baf5c05e3a54e!2s104%20Rue%20de%20Lamouly%2C%2064600%20Anglet!5e0!3m2!1sen!2sfr!4v1746961772155!5m2!1sen!2sfr"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </figure>
+        </article>
+
+        <p>Vous aurez la possibilité de vous stationner sur des parkings gratuits à proximité des deux lieux.</p>
+
+        <a href="https://alintuition.simplybook.it/v2/" class="btn btn-reverse">Prendre Rendez-vous en ligne</a>
+
+        <small>
+          NB : N'oubliez pas de prévoir une arrivée sur place 15 minutes avant le début de votre soin afin d'éviter tout
+          retard et permettre une prise en charge complète.
+        </small>
       </section>
     </main>
 

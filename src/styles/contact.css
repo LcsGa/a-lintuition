@@ -1,0 +1,61 @@
+#contact {
+  background-color: var(--color-graphics);
+  color: var(--color-surface);
+
+  h2 {
+    color: inherit;
+  }
+
+  .group {
+    display: grid;
+    justify-self: stretch;
+    justify-content: center;
+    column-gap: var(--size-8);
+    margin-inline: auto;
+
+    @media screen and (width >= 850px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, auto);
+
+      figure {
+        grid-row: span 4;
+        grid-template-rows: subgrid;
+      }
+    }
+
+    @media screen and (width < 850px) {
+      row-gap: var(--size-8);
+    }
+
+    figure {
+      display: grid;
+      align-content: start;
+      padding: var(--size-5);
+      border-radius: var(--radius-3);
+      background-color: color-mix(in oklch, var(--color-graphics), white 20%);
+
+      iframe {
+        max-inline-size: var(--size-15);
+        inline-size: 100%;
+        aspect-ratio: var(--ratio-landscape);
+      }
+
+      small {
+        margin-block-start: var(--size-1);
+        font-weight: var(--font-weight-3);
+        font-style: italic;
+      }
+    }
+  }
+
+  .btn {
+    align-self: center;
+  }
+
+  > small {
+    max-inline-size: var(--size-content-3);
+    text-align: center;
+    font-style: italic;
+    opacity: 0.9;
+  }
+}
