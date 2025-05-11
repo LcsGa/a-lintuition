@@ -11,15 +11,15 @@
 
 @font-face {
   font-family: 'Savoye Let';
-  src: url('assets/fonts/savoyeletplain.ttf');
+  src: url('/fonts/savoyeletplain.ttf');
 }
 
 @font-face {
   font-family: 'Sulat Rizal';
-  src: url('assets/fonts/SulatRizal.ttf');
+  src: url('/fonts/SulatRizal.ttf');
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('assets/fonts/Inter-VariableFont_opsz,wght.ttf');
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf');
 }
