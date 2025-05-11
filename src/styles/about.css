@@ -1,12 +1,12 @@
 #about {
   display: grid;
-  grid-template-columns: auto 1fr;
-  justify-items: start;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
+  justify-items: start;
   gap: var(--size-4) var(--size-8);
 
   img {
-    grid-row: span 9;
+    grid-row: span 2;
     inline-size: var(--size-14);
     border-radius: var(--radius-4);
   }
@@ -15,9 +15,13 @@
     margin-block-end: var(--size-3);
   }
 
+  article {
+    display: grid;
+    gap: inherit;
+  }
+
   h2,
   p {
-    grid-column: 2;
     text-align: start;
   }
 }
