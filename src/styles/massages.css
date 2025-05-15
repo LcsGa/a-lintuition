@@ -25,11 +25,6 @@
     background-color: var(--color-surface-variant);
     padding: var(--size-6);
 
-    h3 {
-      color: var(--color-primary);
-      margin-bottom: var(--size-3);
-    }
-
     p {
       text-align: center;
       text-wrap: balance;
