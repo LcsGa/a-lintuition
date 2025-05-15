@@ -28,11 +28,21 @@
 
   q {
     text-align: center;
-    font-family: var(--font-title);
     font-size: var(--font-size-fluid-2);
     font-style: italic;
     font-weight: 200;
     quotes: none;
     color: var(--color-primary);
+  }
+
+  @media screen and (orientation: landscape) and (height < 850px) {
+    grid-template-rows: unset;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: stretch;
+    padding-block-end: calc(2 * var(--section-gutter));
+
+    q {
+      text-align: start;
+    }
   }
 }
