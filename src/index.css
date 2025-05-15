@@ -76,10 +76,17 @@
     display: grid;
     gap: var(--size-8);
     justify-items: center;
-    min-block-size: 100dvh;
     padding: var(--section-block-start-gutter) var(--section-gutter);
 
-    &:nth-child(even) {
+    &:nth-child(2) {
+      padding-block-start: var(--size-3);
+    }
+
+    &:not(:nth-child(2)) {
+      min-block-size: 100dvh;
+    }
+
+    &:not(:first-child):nth-child(odd) {
       background-color: color-mix(in oklch, var(--color-surface-variant), var(--color-surface) 60%);
     }
 

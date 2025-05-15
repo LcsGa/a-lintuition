@@ -1,7 +1,7 @@
 #landing {
   block-size: var(--section-block-size);
   display: grid;
-  grid-template-rows: 1fr repeat(2, auto);
+  grid-template-rows: 1fr auto;
   justify-items: center;
   align-content: space-between;
   align-items: center;
