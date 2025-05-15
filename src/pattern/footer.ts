@@ -24,8 +24,11 @@ export class Footer extends LitElement {
 
       a {
         color: inherit;
-        text-decoration: inherit;
         cursor: pointer;
+
+        &:has(h1) {
+          text-decoration: inherit;
+        }
       }
 
       small {

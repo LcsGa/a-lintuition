@@ -7,9 +7,22 @@
   padding: var(--size-3) var(--size-6);
   cursor: pointer;
   font-weight: var(--font-weight-7);
+  text-decoration: none;
+  transition-property: background-color, color;
+  transition-timing-function: ease-out;
+  transition-duration: 0.15s;
+
+  &:hover {
+    background-color: color-mix(in oklch, var(--color-primary), var(--color-text) 60%);
+  }
 
   &.btn-reverse {
     background-color: var(--color-surface);
     color: var(--color-graphics);
+
+    &:hover {
+      background-color: color-mix(in oklch, var(--color-primary), var(--color-text) 70%);
+      color: var(--color-surface);
+    }
   }
 }
