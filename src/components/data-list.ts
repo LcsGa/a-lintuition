@@ -39,7 +39,7 @@ export class DataListItem extends LitElement {
       margin: 0;
     }
 
-    :host-context(.column) dd {
+    :host-context(.column) :host dd {
       margin-block-end: var(--size-2);
     }
   `;

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="module" src="./src/components"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A l'intuition - Mentions légales</title>
+    <style>
+      @layer reset, theme, base, component, feature;
+
+      li {
+        &::before,
+        > span {
+          font-weight: bold;
+        }
+      }
+
+      body {
+        padding: var(--size-4);
+
+        > ol {
+          display: grid;
+          row-gap: var(--size-4);
+          counter-reset: firsrt-level;
+          margin-block: var(--size-4);
+
+          > li {
+            padding-block-end: var(--size-4);
+            border-block-end: var(--border-size-1) solid var(--color-surface-variant);
+
+            &::before {
+              counter-increment: firsrt-level;
+              content: counter(firsrt-level) ' - ';
+            }
+          }
+        }
+      }
+
+      ui-data-list {
+        display: block;
+      }
+    </style>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+
+  <body>
+    <h2>Mentions légales</h2>
+
+    <ol>
+      <li>
+        <span>Éditeur du site</span>
+
+        <ui-data-list>
+          <ui-data-list-item heading="Dénomination Sociale">Lucille Thouart – À l’intuition</ui-data-list-item>
+
+          <ui-data-list-item heading="Forme Juridique">Entrepreneur Individuel (Micro-entreprise)</ui-data-list-item>
+
+          <ui-data-list-item heading="Siège Social">
+            <a href="https://maps.app.goo.gl/aboqTh55LCfyQkYz7">187 chemin d’Olhassogaraia - 64240 Hasparren, France</a>
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Numéro SIREN">983 613 183</ui-data-list-item>
+
+          <ui-data-list-item heading="Numéro SIRET">
+            <a href="https://www.societe.com/societe/983613183-983613183.html">983 613 183 00018</a>
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Contact Téléphone">
+            <a href="tel:+33647888525" class="text-nowrap">06 47 88 85 25</a>
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Contact Email">
+            <a href="mailto:alintuition3@gmail.com" class="text-nowrap">alintuition3@gmail.com</a>
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Dispense de TVA">
+            Entreprise non assujettie à la TVA, en application de l'article 293 B du Code Général des Impôts.
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Activité Réglementée">Non</ui-data-list-item>
+        </ui-data-list>
+      </li>
+
+      <li>
+        <span>Hébergement du site</span>
+
+        <ui-data-list class="column">
+          <ui-data-list-item heading="Hébergeur principal (contenu du site)">
+            <ui-data-list>
+              <ui-data-list-item heading="Nom">GitHub Pages</ui-data-list-item>
+
+              <ui-data-list-item heading="Adresse">
+                <a href="https://maps.app.goo.gl/g8jpv6bQy6rjAbdp7">
+                  88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis
+                </a>
+              </ui-data-list-item>
+
+              <ui-data-list-item heading="Site web">
+                <a href="https://pages.github.com/">https://pages.github.com/</a>
+              </ui-data-list-item>
+            </ui-data-list>
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Registrar du nom de domaine / Point d'entrée éventuel" class="column">
+            <ui-data-list>
+              <ui-data-list-item heading="Nom">
+                <a href="https://g.co/kgs/cea85eE">Hostinger International Ltd.</a>
+              </ui-data-list-item>
+
+              <ui-data-list-item heading="Adresse">
+                <a href="https://maps.app.goo.gl/zVNBWPRmzvz4LWsx6">61 Lordou Vironos Street, 6023 Larnaca, Chypre</a>
+              </ui-data-list-item>
+
+              <ui-data-list-item heading="Site web">
+                <a href="https://www.hostinger.fr/">https://www.hostinger.fr/</a>
+              </ui-data-list-item>
+            </ui-data-list>
+          </ui-data-list-item>
+        </ui-data-list>
+      </li>
+
+      <li>
+        <span>Propriété intellectuelle</span>
+
+        <p>
+          L'ensemble de ce site (contenu, images, textes, logo, etc.) est la propriété exclusive de Lucille Thouart – À
+          l’intuition et est protégé par le droit d'auteur.
+
+          <br />
+
+          Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du
+          site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de
+          Lucille Thouart.
+
+          <br />
+
+          Pour plus de détails sur la propriété intellectuelle, veuillez vous référer à la section dédiée de nos
+          <a href="cgv.html">Conditions Générales de Vente (CGV)</a>.
+        </p>
+      </li>
+    </ol>
+
+    <strong>Date d’entrée en vigueur : <time datetime="2025-07-05">05 juillet 2025</time></strong>
+  </body>
+</html>
