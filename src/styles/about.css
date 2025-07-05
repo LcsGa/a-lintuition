@@ -36,7 +36,6 @@
     }
 
     img {
-      aspect-ratio: var(--ratio-golden);
       inline-size: 100%;
     }
   }
