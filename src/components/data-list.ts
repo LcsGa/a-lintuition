@@ -6,8 +6,11 @@ export class DataList extends LitElement {
   static styles = css`
     dl {
       display: inline-grid;
-      grid-template-columns: repeat(2, auto);
       row-gap: var(--size-1);
+    }
+
+    :host(:not(.column)) dl {
+      grid-template-columns: repeat(2, auto);
       column-gap: var(--size-4);
     }
   `;
@@ -34,6 +37,10 @@ export class DataListItem extends LitElement {
 
     dd {
       margin: 0;
+    }
+
+    :host-context(.column) dd {
+      margin-block-end: var(--size-2);
     }
   `;
 

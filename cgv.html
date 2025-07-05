@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script type="module" src="./src/components"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A l'intuition - CGV</title>
+    <style>
+      @layer reset, theme, base, component, feature;
+
+      ul {
+        list-style: inside '-';
+      }
+
+      li {
+        &::before,
+        > span {
+          font-weight: bold;
+        }
+      }
+
+      body {
+        padding: var(--size-4);
+
+        > ol {
+          display: grid;
+          row-gap: var(--size-4);
+          counter-reset: firsrt-level;
+          margin-block: var(--size-4);
+
+          > li {
+            padding-block-end: var(--size-4);
+            border-block-end: var(--border-size-1) solid var(--color-surface-variant);
+
+            &::before {
+              counter-increment: firsrt-level;
+              content: counter(firsrt-level) ' - ';
+            }
+          }
+
+          > li > ol {
+            display: grid;
+            row-gap: var(--size-2);
+            counter-reset: second-level;
+            margin-block-start: var(--size-2);
+
+            > li::before {
+              counter-increment: second-level;
+              content: counter(firsrt-level) '.' counter(second-level) ' - ';
+            }
+          }
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+
+  <body>
+    <h2>Conditions générales de vente</h2>
+
+    <ol>
+      <li>
+        <span>Généralités</span>
+
+        <p>
+          Les présentes conditions générales de vente (CGV) s’appliquent, sans restriction ni réserve, à l’ensemble des
+          prestations de services (ci-après les « Prestations ») proposées par Lucille Thouart – À l’intuition,
+          entreprise individuelle immatriculée sous le Siret 98361318300018 et ce, à l’ensemble de ses clients, quel que
+          soit leur statut ou qualité.
+
+          <br />
+
+          En conséquence, la réalisation d’une commande par un client pour une prestation proposée, que ce soit
+          directement aux cabinets de massage situés au centre Viniyoga 104 rue de Lamouly – 64600 Anglet et à l’espace
+          Ordokia rue Principale - 11B Espace Ordokia – 64250 Itxassou, ou sur le site internet
+          <a href="https://a-lintuition.fr">a-lintuition.fr</a>, emporte l’adhésion et l'acceptation sans réserve des
+          présentes CGV par le client, sauf accord particulier préalablement convenu par écrit entre les parties.
+
+          <br />
+
+          Lucille Thouart - À l’intuition se réserve le droit de modifier à tout moment les présentes CGV. Les
+          modifications seront applicables aux seules commandes passées à compter de l’entrée en vigueur desdites
+          modifications.
+
+          <br />
+
+          Tout autre document que les présentes CGV, notamment les publicités, prospectus, flyers, n’a qu’une valeur
+          informative de l’activité proposée par Lucille Thouart - À l’intuition et est non contractuel.
+        </p>
+      </li>
+
+      <li>
+        <span>Caractéristiques essentielles des Prestations</span>
+
+        <p>
+          Les Prestations proposées sont celles qui figurent sur le site internet
+          <a href="https://a-lintuition.fr">a-lintuition.fr</a> et aux cabinets de massage, à savoir :
+        </p>
+
+        <ul>
+          <li>Les prestations de massages sur-mesure</li>
+
+          <li>Les prestations de massages prénatals</li>
+        </ul>
+      </li>
+
+      <li>
+        <span>Cadre des Prestations</span>
+
+        <p>
+          La finalité de l’activité de Lucille Thouart - À l’intuition est exclusivement le bien-être de la personne.
+
+          <br />
+
+          Conformément à la législation en vigueur, les massages bien-être pratiqués par Lucille Thouart, en l’absence
+          de diagnostic et de traitement thérapeutique, ne s’apparentent en rien, ni dans les contenus ni dans les
+          objectifs, à la pratique de la masso-kinésithérapie, ni à toute pratique médicale ou thérapeutique.
+
+          <br />
+
+          Il s’agit de techniques manuelles de bien-être et de relaxation uniquement.
+
+          <br />
+
+          Sont également exclues de l’activité de Lucille Thouart toutes prestations à caractère érotique ou sexuel.
+
+          <br />
+
+          Tout comportement déplacé envers Madame Thouart Lucille pourra faire l’objet de poursuites judiciaires.
+        </p>
+      </li>
+
+      <li>
+        <span>Modalités de réalisation des Prestations</span>
+
+        <ol>
+          <li>
+            <span>Lieux de délivrance des Prestations</span>
+
+            <p>
+              Madame Lucille Thouart - À l’intuition n‘intervient que sur rendez-vous dans les lieux suivants : centre
+              Viniyoga 104 rue de Lamouly – 64600 Anglet et à l’espace Ordokia rue Principale - 11B Espace Ordokia –
+              64250 Itxassou.
+            </p>
+          </li>
+
+          <li>
+            <span>Mise à disposition du matériel</span>
+
+            <p>
+              Lors des séances de massages bien-être aux cabinets situés au centre Viniyoga 104 rue de Lamouly – 64600
+              Anglet et à l’espace Ordokia rue Principale - 11B Espace Ordokia – 64250 Itxassou, Madame Thouart Lucille
+              - À l’intuition met à la disposition du client tout le matériel professionnel nécessaire (table de
+              massage, huile et consommables divers).
+            </p>
+          </li>
+
+          <li>
+            <span>Prise de rendez-vous</span>
+
+            <p>
+              La prise de rendez-vous s’effectue via la plate-forme de réservation Simplybook.
+
+              <br />
+
+              Toutes les coordonnées et liens nécessaires à la prise de rendez-vous sont disponibles sur le site
+              internet <a href="https://a-lintuition.fr">a-l’intuition.fr</a>.
+            </p>
+          </li>
+
+          <li>
+            <span>Gestion des retards</span>
+
+            <p>
+              La planification des rendez-vous par Madame Thouart Lucille - À l’intuition est conçue pour éviter les
+              retards.
+
+              <br />
+
+              Un temps est prévu entre chaque massage afin d’accueillir le client dans les meilleures conditions
+              possibles.
+
+              <br />
+
+              Il est demandé au client d’arriver quelques minutes avant l’heure indiquée du début de la prestation lors
+              de la prise de rendez-vous. Si le client arrive en retard, la séance pourra être écourtée pour ne pas
+              faire attendre les personnes suivantes.
+
+              <br />
+
+              Madame Thouart Lucille se réserve le droit de refuser un client si son retard est trop important pour
+              permettre la réalisation d’une séance de massage correcte et complète.
+
+              <br />
+
+              La séance sera considérée comme due.
+            </p>
+          </li>
+        </ol>
+      </li>
+
+      <li>
+        <span>Contre-indications aux massages bien-être</span>
+
+        <p>
+          Chaque client devra se conformer aux conseils et aux recommandations de Madame Thouart Lucille, notamment au
+          niveau des contre-indications aux massages bien-être.
+
+          <br />
+
+          En effet, à la lecture des présentes CGV, le client est informé et accepte qu’il est contre-indiqué de donner
+          un massage de bien-être, sans avis médical préalable, à des personnes souffrant.
+
+          <br />
+
+          En cas d’allergies, le client s’engage à en informer Lucille Thouart au moment de la prise de rendez-vous.
+
+          <br />
+
+          En cas de grossesse, il est recommandé à la cliente de demander un avis préalable à son médecin, gynécologue
+          ou sage-femme et d’en informer Madame Thouart Lucille lors de la prise de rendez-vous.
+
+          <br />
+
+          Un massage ne pourra pas être effectué avant le 3ème mois de grossesse révolu.
+
+          <br />
+
+          Pour s’assurer que son client est apte à recevoir un massage bien-être, Madame Thouart Lucille lui fera
+          remplir un document rappelant les contre-indications susvisées lors du premier rendez-vous.
+
+          <br />
+
+          Le client attestera également par sa signature qu’il n’a rien à déclarer sur son état de santé qui ne serait
+          pas compatible avec la réalisation d’un massage bien-être sur sa personne sans avis médical et déclare
+          informer au préalable Madame Lucille Thouart de tous changements sur son état de santé lors des prochains
+          rendez-vous.
+
+          <br />
+
+          En conséquence, Madame Thouart Lucille se réserve le droit de refuser à tout moment un client dont l’état de
+          santé ne serait pas compatible avec la réalisation d’un massage bien-être sur sa personne sans avis médical
+          préalable.
+
+          <br />
+
+          De même, les séances de massages ne seront proposées qu’aux personnes majeures, ou mineures titulaires d’une
+          autorisation de leur représentant légal à la pratique du massage bien-être.
+        </p>
+      </li>
+
+      <li>
+        <span>Conditions financières</span>
+
+        <p>
+          Les tarifs des prestations proposées sont indiqués en euros sur le site
+          <a href="https://a-lintuition.fr">a-lintuition.fr</a> et aux cabinets de massage. Les prix sont fermes et
+          définitifs.
+
+          <br />
+
+          Madame Lucille Thouart – À l’intuition n’est pas soumise à la Taxe sur la Valeur Ajoutée (TVA) conformément à
+          l’article 293B du Code Général des Impôts ; les prix mentionnés sur le site internet sont donc indiqués sans
+          TVA.
+
+          <br />
+
+          Dans l’hypothèse où Madame Thouart Lucille - À l’intuition deviendrait assujettie à la TVA, les tarifs
+          affichés sur le site seront réajustés en conséquence et applicables à toute commande passée suivant la date de
+          son assujettissement.
+
+          <br />
+
+          Madame Thouart Lucille – À l’intuition se réserve également le droit de modifier ses prix à tout moment, étant
+          précisé que les prestations seront facturées sur la base des tarifs en vigueur au moment de la réservation du
+          rendez-vous.
+        </p>
+      </li>
+
+      <li>
+        <span>Incapacité de travail de la praticienne</span>
+
+        <p>
+          En cas d’incapacité physique temporaire de Madame Thouart Lucille – À l’intuition (par suite de maladie ou
+          d’accident), elle se réserve le droit de replanifier de nouvelles dates de rendez-vous en concertation avec le
+          client sans que ce dernier ne puisse exiger le versement d’une indemnité.
+
+          <br />
+
+          En cas d’incapacité physique permanente de Lucille Thouart, tout type de contrat ou d’engagement avec les
+          clients de Madame Thouart Lucille - À l’intuition sera résilié de plein droit sans qu’il ne puisse être
+          réclamé d’indemnité compensatrice.
+
+          <br />
+
+          Les acomptes perçus seront restitués au client dans un délai maximal de 8 (huit) jours suivant la résiliation
+          du contrat.
+        </p>
+      </li>
+
+      <li>
+        <span>Responsabilité Civile Professionnelle</span>
+
+        <p>
+          Madame Lucille Thouart - À l’intuition a souscrit auprès de la compagnie Hiscox une assurance en
+          responsabilité civile professionnelle et risques d’exploitation HA RCP0507576.
+
+          <br />
+
+          Il est précisé que la responsabilité de Lucille Thouart ne saurait être engagée en cas de dommages liés à la
+          négligence d’un client, en particulier s’il n’a pas révélé à Lucille Thouart l’existence de contre-indications
+          l’affectant, que ce soit lors de la signature du document d’information visant à l’alerter des
+          contre-indications applicables, ou lors des rendez-vous ultérieurs en cas de modifications de son état de
+          santé personnel.
+        </p>
+      </li>
+
+      <li>
+        <span>Propriété Intellectuelle</span>
+
+        <p>
+          Lucille Thouart est titulaire des droits de propriété intellectuelle sur tous les éléments visibles sur le
+          site <a href="https://a-lintuition.fr">a-lintuition.fr</a>, notamment : les textes, images, photos,
+          graphismes, logo.
+
+          <br />
+
+          Lucille Thouart est également titulaire des droits de propriété intellectuelle de la marque « À l’intuition ».
+          Toute reproduction, représentation, modification, publication, adaptation ou exploitation de tout ou partie de
+          la marque « À l’intuition » ou autres éléments du site
+          <a href="https://a-lintuition.fr">a-l’intuition.fr</a> est interdite sur quelque support que ce soit et de
+          quelque manière que ce soit, sauf avec un accord écrit de Lucille Thouart.
+        </p>
+      </li>
+
+      <li>
+        <span>Données personnelles et Politique de Confidentialité</span>
+
+        <ui-data-list class="column">
+          <ui-data-list-item heading="Nature des données collectées">
+            Lucille Thouart – À l’intuition ne collecte <em>aucune donnée personnelle directe</em> (nom, prénom, email,
+            téléphone, etc.) via le site web <a href="https://a-lintuition.fr">a-lintuition.fr</a>.
+
+            <br />
+
+            Ce site n'utilise <em>aucun cookie</em>, qu'il soit technique, de mesure d'audience ou de suivi.
+
+            <br />
+
+            Les seules données potentiellement traitées sont des
+            <em>informations techniques anonymisées</em> liées à la connexion au serveur (comme l'adresse IP tronquée),
+            exclusivement à des fins de sécurité et de maintenance par l'hébergeur. Ces informations ne permettent pas
+            de vous identifier personnellement.
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Origine de la collecte de données (hors site web)">
+            Toute collecte de données personnelles (comme votre nom ou contact pour un rendez-vous) s'effectue
+            <em>uniquement via la plateforme externe de réservation Simplybook</em> ou lors d'échanges directs
+            (téléphone, email). Ces plateformes et méthodes ont leurs propres politiques de confidentialité que nous
+            vous invitons à consulter. Lucille Thouart – À l’intuition ne reçoit de Simplybook que les informations
+            strictement nécessaires à la gestion de votre rendez-vous.
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Finalité du traitement des données">
+            Les rares données techniques collectées par l'hébergeur servent uniquement à assurer le bon fonctionnement
+            et la sécurité du site. Elles ne sont pas utilisées à des fins commerciales, de profilage ou de marketing.
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Partage des données">
+            Aucune donnée personnelle n'est partagée, vendue ou louée à des tiers par Lucille Thouart – À l’intuition.
+          </ui-data-list-item>
+
+          <ui-data-list-item heading="Vos droits">
+            Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de
+            rectification et d'effacement des données vous concernant. Étant donné qu'aucune donnée directe n'est
+            collectée par ce site, l'exercice de ces droits concernera principalement les informations que vous avez
+            fournies volontairement via la plateforme de réservation ou d'autres canaux de communication directe.
+
+            <br />
+
+            Pour toute question ou pour exercer vos droits, veuillez contacter Lucille Thouart dont les coordonnées sont
+            disponibles dans la section "Mentions Légales".
+          </ui-data-list-item>
+        </ui-data-list>
+      </li>
+
+      <li>
+        <span>Loi applicable et juridiction compétente</span>
+
+        <p>
+          Les présentes CGV sont soumises à la législation française.
+
+          <br />
+
+          En cas de litiges, les parties s’engagent à rechercher une solution à l’amiable avant toute action judiciaire.
+          <br />
+
+          À défaut, tout différend survenant avec un client sera soumis à la compétence exclusive des tribunaux de
+          Bayonne.
+        </p>
+      </li>
+
+      <li>
+        <span>Mentions Légales</span>
+
+        <p><a href="legal-notices.html">Voir les Mentions légales</a></p>
+      </li>
+    </ol>
+
+    <strong>Date d’entrée en vigueur : <time datetime="2025-07-05">05 juillet 2025</time></strong>
+  </body>
+</html>

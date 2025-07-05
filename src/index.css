@@ -21,6 +21,7 @@
     text-wrap: pretty;
   }
 
+  ol,
   ul {
     list-style: none;
   }

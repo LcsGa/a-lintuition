@@ -18,10 +18,6 @@ export class Footer extends LitElement {
         font-size: var(--font-size-6);
       }
 
-      article {
-        margin-block: var(--size-4);
-      }
-
       a {
         color: inherit;
         cursor: pointer;
@@ -31,8 +27,18 @@ export class Footer extends LitElement {
         }
       }
 
+      ::slotted(ul) {
+        display: grid;
+        justify-items: center;
+        gap: var(--size-1);
+      }
+
       small {
         margin-block-end: var(--size-2);
+
+        &:first-of-type {
+          margin-block-start: var(--size-4);
+        }
 
         + small {
           opacity: 0.7;
@@ -49,6 +55,8 @@ export class Footer extends LitElement {
         <a href="#landing">
           <h1>À l'intuition</h1>
         </a>
+
+        <slot name="links"></slot>
 
         <small>&copy; ${this.currentYear} À l'intuition - Tous droits réservés</small>
 
