@@ -14,7 +14,7 @@
 @import './styles/contact.css' layer(feature);
 
 @layer reset {
-  :not(app-service-card) {
+  :not(app-service-card, ui-banner) {
     box-sizing: border-box;
     margin: 0;
     padding: 0;

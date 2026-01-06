@@ -2,6 +2,8 @@
   --color-surface: hsl(23, 100%, 96%);
   --color-surface-variant: hsl(22, 34%, 73%);
   --color-primary: hsl(0, 100%, 28%);
+  --color-secondary: hsl(150, 20%, 40%);
+  --color-tertiary: hsl(190, 30%, 35%);
   --color-text: hsl(0, 5%, 8%);
   --color-graphics: hsl(0, 40%, 34%);
 
