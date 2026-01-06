@@ -41,6 +41,10 @@
     align-content: stretch;
     padding-block-end: calc(2 * var(--section-gutter));
 
+    ui-banner {
+      grid-column: 1 / -1;
+    }
+
     q {
       text-align: start;
     }

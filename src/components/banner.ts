@@ -7,7 +7,7 @@ export class Banner extends LitElement {
     :host {
       display: grid;
       grid-template-columns: auto 1fr;
-      gap: var(--size-2);
+      gap: var(--size-1) var(--size-2);
       padding: var(--size-2);
       align-items: center;
 
@@ -19,7 +19,12 @@ export class Banner extends LitElement {
     }
 
     svg {
-      inline-size: var(--size-4);
+      align-self: baseline;
+      inline-size: 1lh;
+    }
+
+    ::slotted(*) {
+      grid-column: 2;
     }
   `;
 
